@@ -7,11 +7,11 @@ public class Main {
         String Name,password;
         Name=sc.nextLine();
          password=sc.nextLine();
-               Bank SBIUser= new SBIaccount(Name,password);
+               SBIaccount SBIUser= new SBIaccount(Name,password);
                SBIUser.addMoney(2000);
                System.out.println(SBIUser.checkBalance());
                System.out.println(SBIUser.withDraw(1000));
         System.out.println(SBIUser.checkBalance());
-
+         SBIUser.setBalance(2050);
         }
     }
