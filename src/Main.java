@@ -10,5 +10,8 @@ public class Main {
                Bank SBIUser= new SBIaccount(Name,password);
                SBIUser.addMoney(2000);
                System.out.println(SBIUser.checkBalance());
+               System.out.println(SBIUser.withDraw(1000));
+        System.out.println(SBIUser.checkBalance());
+
         }
     }
